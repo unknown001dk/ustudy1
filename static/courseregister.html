@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Register</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-gray-200 md:flex md:justify-center md:items-center ">
+  <div class="bg-white rounded shadow-lg w-96 p-9">
+  
+      <h1 class="text-3xl block text-center font-semibold mb-5">Course Registeration</h1>
+  
+    <div class="mb-5">
+      <label for="name" class="font-bold block mb-5 ">Name</label>
+      <input type="text"class="rounded border-solid border-slate-100 shadow-lg px-5 py-2 w-full block " placeholder="Enter name"/>
+    </div>
+
+    <div class="mb-5">
+      <label for="email" class="font-bold block mb-5 ">Email</label>
+      <input type="email"class="rounded border-solid border-slate-100 shadow-lg px-5 py-2 w-full block" placeholder="Enter email here"/>
+    </div>
+
+    <div class="mb-5">
+      <label for="password" class="font-bold block mb-5 ">Password</label>
+      <input type="password"class="rounded border-solid border-slate-100 shadow-lg px-5 py-2 w-full block" placeholder="Enter password"/>
+    </div>
+
+    <div class="mb-4 md:flex md:justify-between">
+      <label for="gender" class="font-bold block mb-5 ">Gender</label>
+    </div>
+
+    <div class="md:flex md:justify-between block">  
+        <div class="flex items-center mb-2">
+          <input id="male" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+          <label for="male" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Male</label>
+        </div>
+        <div class="flex items-center mb-2">
+            <input checked id="female" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="female" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Female</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input checked id="others" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+          <label for="others" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Others</label>
+        </div>
+    </div>
+
+    <div class="mb-5 block">
+      <label for="degree" class="font-bold block mb-5 ">Degree</label>
+      <div class="mt-2">
+        <select id="college" name="college" autocomplete="college-name" class="rounded border-solid border-slate-100 shadow-lg px-5 py-2 w-full block">
+          <option class="" selected hidden >Select Your degree</option>
+          <option>Enginnering college</option>
+          <option>Arts college</option>
+          <option>others</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="mb-5">
+      <label for="year" class="font-bold block mb-5 ">Which year</label>
+      <div class="mt-2">
+        <select id="college" name="college" autocomplete="college-name" class="rounded border-solid border-slate-100 shadow-lg px-5 py-2 w-full block">
+          <option class="" selected hidden >Select Your studiying</option>
+          <option>1st year</option>
+          <option>2nd year</option>
+          <option>3rd year</option>
+          <option>Final year</option>
+          <option>Others</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="mb-4 md:flex md:justify-between">
+      <label for="gender" class="font-bold block mb-5 ">Laptop available</label>
+    </div>
+
+    <div class="md:flex md:justify-right block md:space-x-4">  
+      <div class="flex items-center mb-2">
+          <input id="uyes" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+          <label for="yes" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
+        </div>
+        <div class="flex items-center mb-2">
+            <input checked id="uno" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="no" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
+        </div>      
+    </div>
+
+    <div class="mb-4 md:flex md:justify-between">
+      <label for="time" class="font-bold block mb-5 ">Available Time</label>
+    </div>
+
+    <div class="md:flex md:justify-between block">  
+        <div class="flex items-center mb-2">
+          <input id="time1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+          <label for="time1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">6.30-7.30</label>
+        </div>
+        <div class="flex items-center mb-2">
+            <input checked id="time2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+            <label for="time2" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">7.00-8.00</label>
+        </div>
+        <div class="flex items-center mb-2">
+          <input checked id="time3" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+          <label for="time3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">8.30-9.30</label>
+        </div>
+    </div>
+
+    <div class="mb-5">
+      <label for="text" class="font-bold block mb-5 ">Why you choose to learn?</label>
+      <input type="text"class="rounded border-solid border-slate-100 shadow-lg px-10 py-10 w-full block" placeholder="Type your thoghts"/>
+      <button class="bg-red-600 text-white px-5 py-2 rounded hover:bg-red-400 block mb-5 w-130">Submit</button>
+    </div>
+
+    
+    <div class="mt-4">
+      <button class="bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-400 block mb-5 w-full">Login</button>
+    </div>
+  </div>
+</body>
+</html>
